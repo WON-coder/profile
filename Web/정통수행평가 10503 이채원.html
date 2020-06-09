@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chaewon</title>
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Raleway&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            overflow-x : hidden;
+            position : relative;
+            font-family: 'Do Hyeon', sans-serif;
+            font-family: 'Raleway', sans-serif;
+        }
+        nav{
+            position : fixed;
+            right : 20px;
+            top : 20px;
+            z-index : 1;
+        }
+        nav:hover{
+            opacity : 0.5;
+        }
+        header, section {
+            display:flex;
+            flex-direction : column;
+            justify-content: center;
+            align-items : center;
+            margin:0;
+            width: 100vw;
+            height: 100vh;
+            font-size:30px;
+            font-family: 'Do Hyeon', sans-serif;
+        }
+        header{
+            font-family: 'Raleway', sans-serif;
+            background-color : #146A8C;
+        }
+        header h1{
+            color : white;
+        }
+        header ul li img{
+            padding : 10px;
+            border-radius : 10px;
+            background-color: white;
+        }
+        header ul li{
+            list-style : none;
+            display : inline;
+        }
+        header a{
+            text-decoration : none;
+            color : white;
+            font-size: 20px;
+            padding : 20px;
+            display : inline-block;
+            margin : 0;
+            text-align : center;
+            border-radius : 7px;
+        }
+        header a:hover{
+            color : black;
+            background-color : #E5E2D8;
+        }
+
+
+        section.intro{
+            background-color:whitesmoke;
+        }
+        section.intro h1{
+            text-shadow : 5px 5px 0px #BAC8D9;
+        }
+        section.intro img{
+            padding:10;
+            margin:30px;
+            border-radius : 10px;
+            box-shadow: 5px 5px 5px gray;
+        }
+        section.intro ul{
+            border : solid 3px gray;
+            border-radius : 10px;
+            width : 300px;
+            height : 280px;
+            padding : 30px;
+            margin : 30px;
+            list-style:none;
+            background-color : whitesmoke;
+        }
+        section.intro div{
+            display : flex;
+        }
+
+
+        section.graduation{
+            background-color : #2C3F59;
+            color : pink;
+        }
+        section.graduation h1{
+            text-shadow: 5px 5px 0px purple;
+        }
+        section.graduation ul{
+            list-style : none;
+        }
+        section.graduation li{
+            margin : 10px;
+        }
+
+
+        section.song{
+            background-color : #148BA6;
+        }
+        section.song img{
+            padding:10;
+            margin:30px;
+            border-radius : 10px;
+            box-shadow : 5px 5px 5px #012840;
+        }
+        section.song img:hover{
+            box-shadow : none;
+            position : relative;
+            left : 5px;
+            top : 5px;
+        }
+        section.song h1{
+            text-shadow : 5px 5px 0px rgb(149, 171, 197);
+        }
+        section.song div{
+            display : flex;
+            margin : 10px;
+        }
+        section.song div div{
+            display : flex;
+            flex-direction : column;
+            text-align : center;
+            color : #BAC8D9;
+            font-size : 28px;
+            font-weight : lighter;
+        }
+
+
+        section.book{
+            background-color : #15BFBF;
+        }
+        section.book h1{
+            text-shadow : 5px 5px 0px rgb(65, 143, 143);
+        }
+        section.book img{
+            border-radius : 10px;
+            margin : 0 0 20px 0;
+            box-shadow : 5px 5px 5px #012840;
+        }
+        section.book div{
+            display : flex;
+        }
+        section.book div div{
+            display : flex;
+            flex-direction: column;
+            margin : 0 70px;
+        }
+
+        
+        section.travel {
+            background-color : #037F8C;
+            position : relative;
+            color : white;
+        }
+        section.travel h1{
+            color : yellow;
+            text-shadow : 5px 5px 0px orange;
+        }
+        section.travel div img{
+            border : solid 8px white;
+            margin : 20px;
+            box-shadow : 5px 5px 5px #012840;
+        }
+        section.travel div{
+            display : flex;
+        }
+        section.travel div div{
+            display : flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        section.travel h2{
+            text-shadow: 5px 5px 0px #012840;
+        }
+        .suitcase{
+            position : absolute;
+            left : 30px;
+            bottom : 30px;
+        }
+
+
+        footer{
+            background-color : #FFFCF1;
+            width : 100vw;
+            height : 10vh;
+            font-size : 20px;
+            display : flex;
+            justify-content: center;
+            align-items: center;
+        }
+        footer a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header id="home">
+        <h1>Chaewon</h1>
+        <div>
+        <ul>
+            <li><a href=#intro><img src="introduce.png" alt="introduce" width="50px"><br>Intro</a></li>
+            <li><a href=#graduation><img src="mortarboard.png" alt="graduation" width="50px"><br>Gradu</a></li>
+            <li><a href=#song><img src="music.png" alt="music" width="50px"><br>Music</a></li>
+            <li><a href=#book><img src="book.png" alt="book" width="50px"><br>Book</a></li>
+            <li><a href=#travel><img src="air-freight.png" alt="airplane" width="50px"><br>Travel</a></li>
+        </ul>
+        </div>
+    </header>
+    <nav id="icon">
+        <a href=#home><img src="home.png" alt="홈" width = "60px" height = "60px"></a>
+    </nav>
+    <section class="intro" id="intro">
+        <h1>INTRODUCE</h1>
+        <div>
+            <img src="자화상.jpg" alt="자화상" width="350" height="350">
+            <ul>
+                <li>이름 : 이채원</li>
+                <li>생일 : 2003년 7월 12일</li>
+                <li>사는곳 : 용산구</li>
+                <li>소속 : 선린인터넷고등학교</li>
+                <li>학번 : 10503</li>
+                <li>혈액형 : B형</li>
+            </ul>
+        </div>
+    </section>
+    <section class="graduation" id="graduation">
+        <h1>GRADUATION</h1>
+        <ul>
+            <li>2016. 서울염리초등학교 졸업</li>
+            <li>2019. 동도중학교 졸업</li>
+        </ul>
+    </section>
+    <section class="song" id="song">
+        <h1>MUSIC</h1>
+        <div>
+            <div><a href="https://www.youtube.com/watch?v=aPNCP1IEF4g" target="blank"><img src="파란꽃.jpg" alt="파란꽃-이바다" width = "200px" height = "200px"></a> 파란꽃-이바다</div>
+            <div><a href="https://www.youtube.com/watch?v=Y90uGW5z2MM" target="blank"><img src="청개구리.jpg" alt="청개구리-펜타곤" width = "200px" height = "200px"></a> 청개구리-펜타곤</div>
+            <div><a href="https://www.youtube.com/watch?v=heMTVlawFmM" target="blank"><img src="RomanHoliday.jpg" alt="RomanHoliday-Halsey" width = "200px" height = "200px"></a> Roman Holiday-Halsey</div>
+            <div><a href="https://www.youtube.com/watch?v=SCLwde3rN1o" target="blank"><img src="Drugs&theInternet.jpg" alt="Drugs&theInternet-Lauv" width = "200px" height = "200px"></a> Drugs & The Internet-Lauv</div>
+        </div>
+    </section>
+    <section class="book" id="book">
+        <h1>BOOK</h1>
+        <div>
+            <div><img src="마법의 시간여행.jpg" alt="마법의 시간여행" height="350"><span>▶마법의 시간여행</span></div>
+            <div><img src="데미안.jpg" alt="데미안" height="350"><span>▶데미안</span></div>
+        </div>
+    </section>
+    <section class="travel" id="travel">
+        <h1>TRAVEL</h1>
+        <div>
+            <img src="아이슬란드.jpg" alt="아이슬란드">
+            <div>
+                <h2>ICELAND</h2>
+            </div>
+        </div>
+        <img src="suitcase.png" alt="suitcase" class="suitcase" width="200px">
+    </section>
+    <footer>
+            <div>
+                Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons"> Smashicons </a>
+                from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+            </div>
+    </footer>
+</body>
